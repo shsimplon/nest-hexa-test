@@ -9,7 +9,7 @@ class Mock {
   constructor() {
     this.datas = [];
   }
-
+  //save data
   async save(data: any): Promise<any> {
     this.datas.push(data);
     return await 'Success';
