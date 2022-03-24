@@ -9,7 +9,7 @@ class Mock {
   constructor() {
     this.datas = [];
   }
-
+  //save data
   async save(data: any): Promise<any> {
     this.datas.push(data);
     return await 'Success';
@@ -31,7 +31,7 @@ class Mock {
     }
 
     const indexOfDataFound = this.datas.indexOf(dataFound);
-
+    //chercher l'element a modifier
     const obj = {
       ...this.datas[indexOfDataFound],
       ...data,

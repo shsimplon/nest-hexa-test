@@ -38,10 +38,10 @@ describe('should test jobService class', () => {
       description: 'description',
     });
     const resp = await jobService.update(1, newjob);
-    console.log(`NEWJOB :`, newjob);
-    console.log(`RESPONSE :`, resp);
-    console.log(`JOB:`, job);
-    console.log(await jobService.getAll());
+    // console.log(`NEWJOB :`, newjob);
+    // console.log(`RESPONSE :`, resp);
+    // console.log(`JOB:`, job);
+    // console.log(await jobService.getAll());
 
     expect(resp).toEqual(newjob);
   });

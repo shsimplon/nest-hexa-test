@@ -1,12 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { HttpStatus, INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-// import { TestModule } from './test.module';
-// import { JobController } from '../src/exposition/job/JobController';
-// import { JobRepositoryAdapter } from '../src/infrastructure/job/JobRepositoryAdapter';
-// import { JobService } from '../src/domain/job/JobService';
-// import mockedAdapter from './mock/mockedAdapter';
-// import { JobServiceAdapter } from '../src/exposition/job/JobServiceAdapter';
+
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { JobEntity } from './mock/entity';
 import { JobModule } from './mock/job.module';
@@ -32,9 +27,6 @@ describe('AppController (e2e)', () => {
 
     app = moduleFixture.createNestApplication();
     await app.init();
-    await app.listen(8080, () => {
-      console.log('SERVER IS LISTENING');
-    });
 
     const connection = await getConnection();
     const entityManager = connection.createEntityManager();
