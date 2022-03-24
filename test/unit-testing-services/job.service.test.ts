@@ -2,8 +2,7 @@
 import { JobDomain } from '../../src/domain/job/JobDomain';
 import { JobService } from '../../src/domain/job/JobService';
 import Mock from '../mock/mockedAdapter';
-// import mockedAdapter from '../mock/mockedAdapter';
-// import { testDatasetSeed } from '../mock/mockedJobs';
+
 const job = new JobDomain({
   id: 1,
   title: 'pouet',
