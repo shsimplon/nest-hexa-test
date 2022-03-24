@@ -31,7 +31,7 @@ class Mock {
     }
 
     const indexOfDataFound = this.datas.indexOf(dataFound);
-
+    //chercher l'element a modifier
     const obj = {
       ...this.datas[indexOfDataFound],
       ...data,
